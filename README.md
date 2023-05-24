@@ -17,6 +17,12 @@ npm install -g vf-nextjs-app
 vf-nextjs-app create <project-name>
 ```
 
+or via `npx`
+
+```bash
+npx vf-nextjs-app create <project-name>
+```
+
 ## Description
 
 `vf-nextjs-app` is a command-line tool that allows you to quickly scaffold a Vectorform Nextjs starter repository. It provides a convenient way to set up a Next.js project with all the necessary configurations and dependencies.
