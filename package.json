@@ -1,0 +1,25 @@
+{
+  "name": "vf-nextjs-app",
+  "version": "0.0.1",
+  "description": "A command-line tool to scaffold a Vectorform Nextjs starter repositories",
+  "main": "index.js",
+  "bin": {
+    "vf-nextjs-app": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "git",
+    "repository",
+    "scaffold"
+  ],
+  "author": "jsfowles js.fowles@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^8.3.0",
+    "shelljs": "^0.8.4"
+  }
+}
