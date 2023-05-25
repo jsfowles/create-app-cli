@@ -1,6 +1,6 @@
 # create-vf-app
 
-**create-vf-app** is a Command Line Interface (CLI) tool developed for the purpose of creating and scaffolding Vectorform Next.js starter repositories.
+**create-vf-app** is a Command Line Interface (CLI) tool developed for the purpose of creating and scaffolding Vectorform starter repositories.
 
 ## Getting Started
 

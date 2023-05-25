@@ -1,7 +1,7 @@
 {
-  "name": "create-vf-app",
-  "version": "0.0.1",
-  "description": "A command-line tool to scaffold a Vectorform Nextjs starter repositories",
+  "name": "vectorform-cli",
+  "version": "0.0.2",
+  "description": "A command-line tool to scaffold Vectorform starter repositories",
   "main": "index.js",
   "bin": {
     "create-vf-app": "./index.js"
@@ -20,6 +20,8 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^10.0.1",
+    "inquirer": "^8.2.5",
+    "prettier": "^2.8.8",
     "shelljs": "^0.8.5"
   }
 }
