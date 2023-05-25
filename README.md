@@ -1,44 +1,52 @@
-# vf-nextjs-app
+# vf-create-app
 
-[![Version](https://img.shields.io/npm/v/vf-nextjs-app.svg)](https://www.npmjs.com/package/vf-nextjs-app)
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+**vf-create-app** is a Command Line Interface (CLI) tool developed for the purpose of creating and scaffolding Vectorform Next.js starter repositories.
 
-A command-line tool to scaffold a Vectorform Nextjs starter repositories.
+## Getting Started
 
-## Installation
+### Installation
 
-```bash
-npm install -g vf-nextjs-app
-```
-
-## Usage
+Install the CLI tool globally using npm:
 
 ```bash
-vf-nextjs-app create <project-name>
+npm install -g vf-create-app
 ```
 
-or via `npx`
+### Usage
+
+Upon successful installation, the CLI tool can be accessed via the command:
 
 ```bash
-npx vf-nextjs-app create <project-name>
+vf-create-app <template> <name>
 ```
 
-## Description
+The `<template>` argument corresponds to the SSH or HTTPS URL of the Git repository you wish to clone as a template.
 
-`vf-nextjs-app` is a command-line tool that allows you to quickly scaffold a Vectorform Nextjs starter repository. It provides a convenient way to set up a Next.js project with all the necessary configurations and dependencies.
+The `<name>` argument represents the desired name of your new repository.
 
-## Dependencies
+As an example, if you wanted to create a new repository named `my-app` based on an existing repository at `https://github.com/user/repository.git`, you would enter:
 
-The following dependencies are required for `vf-nextjs-app` to function correctly:
+```bash
+vf-create-app https://github.com/user/repository.git my-app
+```
 
-- `commander`: "^8.3.0"
-- `shelljs`: "^0.8.4"
+## CLI Command
+
+The CLI tool currently supports a single command:
+
+- `vf-create-app <template> <name>`
+
+  This command carries out the following operations:
+
+  - Clones the repository specified in the `<template>` argument.
+  - Removes the existing `.git` directory to start with a clean history.
+  - Initializes a new Git repository.
+  - Names the new repository as per the `<name>` argument.
 
 ## License
 
-This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the ISC License.
 
-## Author
+## Contact
 
-- Name: jsfowles
-- Email: js.fowles@gmail.com
+For any queries, feel free to reach out to [jfowles@vectorform.com](mailto:jfowles@vectorform.com).

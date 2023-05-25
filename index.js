@@ -3,16 +3,15 @@ const { Command } = require('commander');
 const shell = require('shelljs');
 const program = new Command();
 
-program.version('0.0.2');
-
 program
-    .command('create <name>')
-    .description('Create a new git repository based on a template')
-    .action((name) => {
+    .version('0.0.1')
+    .argument('<template>', 'The template repository')
+    .argument('<name>', 'The name of your new repository')
+    .action((template, name) => {
         console.log('Creating a new repository:', name);
 
         // Clone the template repository
-        if (shell.exec(`git clone https://github.com/jsfowles/next-starter-3.0.git ${name}`).code !== 0) {
+        if (shell.exec(`git clone ${template} ${name}`).code !== 0) {
             console.error('Error: Git clone failed');
             return;
         }

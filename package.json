@@ -1,10 +1,10 @@
 {
-  "name": "vf-nextjs-app",
-  "version": "0.0.2",
+  "name": "vf-create-app",
+  "version": "0.0.1",
   "description": "A command-line tool to scaffold a Vectorform Nextjs starter repositories",
   "main": "index.js",
   "bin": {
-    "vf-nextjs-app": "./index.js"
+    "vf-create-app": "./index.js"
   },
   "scripts": {
     "start": "node index.js",
@@ -16,7 +16,7 @@
     "repository",
     "scaffold"
   ],
-  "author": "jsfowles js.fowles@gmail.com",
+  "author": "jfowles jfowles@vectorform.com",
   "license": "ISC",
   "dependencies": {
     "commander": "^10.0.1",
