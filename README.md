@@ -1,52 +1,39 @@
-# create-vf-app
 
-**create-vf-app** is a Command Line Interface (CLI) tool developed for the purpose of creating and scaffolding Vectorform starter repositories.
 
-## Getting Started
+# vf-create-app
 
-### Installation
+A command-line tool to scaffold Vectorform starter repositories for Node.js applications.
 
-Install the CLI tool globally using npm:
+## Installation
 
 ```bash
-npm install -g create-vf-app
+npm install -g vf-create-app
 ```
 
-### Usage
-
-Upon successful installation, the CLI tool can be accessed via the command:
+## Usage
 
 ```bash
-create-vf-app <template> <name>
+vf-create-app <template> <name>
 ```
 
-The `<template>` argument corresponds to the SSH or HTTPS URL of the Git repository you wish to clone as a template.
+This command clones the `<template>` repository, removes its `.git` directory to start with a clean history, initializes a new Git repository, and names it `<name>`.
 
-The `<name>` argument represents the desired name of your new repository.
+## Features
 
-As an example, if you wanted to create a new repository create-vf-app` based on an existing repository at `https://github.com/user/repository.git`, you would enter:
+**Prompt to Add .prettierrc**: The script will prompt you if you want to add a `.prettierrc` file to your new repository. This file can contain your preferred code formatting settings. If a `.prettierrc` or `.prettierrc.json` file already exists in the cloned repository, you will be asked if you want to overwrite it.
 
-```bash
-create-vf-app https://github.com/user/repositocreate-vf-app
-```
+## Dependencies
 
-## CLI Command
+- Node.js and npm: The script is written in JavaScript for Node.js and is installed via npm.
+- Commander: For parsing command-line options.
+- Shelljs: To execute shell commands from within the JavaScript script.
+- Inquirer: For interactive command-line prompts.
 
-The CLI tool currently supports a single command:
+## Author
 
-- `create-vf-app <template> <name>`
-
-  This command carries out the following operations:
-
-  - Clones the repository specified in the `<template>` argument.
-  - Removes the existing `.git` directory to start with a clean history.
-  - Initializes a new Git repository.
-  - Names the new repository as per the `<name>` argument.
+- jfowles jfowles@vectorform.com
 
 ## License
 
-This project is licensed under the ISC License.
+- ISC
 
-## Contact
-
-For any queries, feel free to reach out to [jfowles@vectorform.com](mailto:jfowles@vectorform.com).
